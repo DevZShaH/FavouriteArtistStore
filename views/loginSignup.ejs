@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../loginSignup.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Login | Signup</title>
+</head>
+
+<body>
+    <div class="cont">
+            
+        <form action="/users/loginSignup" method="POST">
+        <div class="form sign-in">
+            <h2>Sign In</h2>
+            <%- include ('./partials/messages') %>
+            <label>
+                <span>Email Address</span>
+                <input type="email" name="email" placeholder="Enter Email">
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="Enter Password">
+            </label>
+            <button class="submit" type="button submit">Sign In</button>
+            <p class="forgot-password">Forgot Password</p>
+            <div class="social-media">
+                <ul>
+                    <li><img src="../images/facebook.png" alt="facebook"></li>
+                    <li><img src="../images/google.png" alt="google"></li>
+                    <li><img src="../images/twitter.png" alt="twitter"></li>
+                    <li><img src="../images/linkedin.png" alt="linkedin"></li>
+                    <li><img src="../images/instagram.png" alt="instagram"></li>
+                </ul>
+            </div>
+        </div>
+        </form>
+
+        <div class="sub-container">
+            <div class="img">
+                <div class="img-text m-up">
+                    <h2>New here?</h2>
+                    <p>Sign up and discover new opportunities</p>
+                </div>
+                <div class="img-text m-in">
+                    <h2>One of us?</h2>
+                    <p>If you already have an account, just sign in. We've missed you!</p>
+                </div>
+                <div class="img-btn">
+                    <span class="m-up">Sign Up</span>
+                    <span class="m-in">Sign In</span>
+                </div>
+            </div>
+
+
+            <form action="/users/register" method="POST">
+                <div class="form sign-up">
+                    <h2>Sign Up</h2>
+                    <label for="name">
+                        <span>Name</span>
+                        <input type="name text" id="name" name="name" class="form-control" placeholder="Enter Name"
+                            value="<%= typeof name != 'undefined' ? name : '' %>" />
+
+                    </label>
+                    <label for="email">
+                        <span>Email</span>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+                            value="<%= typeof email != 'undefined' ? email : '' %>" />
+                    </label>
+                    <label for="password">
+                        <span>Password</span>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Create Password"
+                            value="<%= typeof password != 'undefined' ? password : '' %>" />
+
+                    </label>
+                    <label for="password2">
+                        <span>Confirm Password</span>
+                        <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password"
+                            value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+
+                    </label>
+                    <button class="submit" type="button submit">Sign Up Now</button>
+                </div>
+            </form>
+            
+
+        </div>
+
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

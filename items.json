@@ -1,0 +1,78 @@
+{
+	"music": [
+		{
+			"id": 1,
+			"name": "Doin' Time",
+			"price": 149,
+			"imgName": "Lana-Del-Rey-Doin'-Time.png"
+		},
+		{
+			"id": 2,
+			"name": "Summer Bummer",
+			"price": 99,
+			"imgName": "Lana-Del-Rey-Summer-Bummer.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Ultraviolence",
+			"price": 99,
+			"imgName": "Lana-Del-Rey-Ultraviolence.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Born To Die",
+			"price": 119,
+			"imgName": "Lana-Del-Rey-Born-To-Die.jpg"
+		}
+	],
+	"merch": [
+		{
+			"id": 5,
+			"name": "Poster",
+			"price": 1399,
+			"imgName": "Lana-Del-Rey-Poster-Kissing.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Poster",
+			"price": 1199,
+			"imgName": "Lana-Del-Rey-Poster-Smoking.jpg"
+		},
+		{
+			"id": 7,
+			"name": "Sticker",
+			"price": 499,
+			"imgName": "Lana-Del-Rey-Sticker-Black-Jacket.png"
+		},
+		{
+			"id": 8,
+			"name": "Sticker",
+			"price": 599,
+			"imgName": "Lana-Del-Rey-Sticker-Cute-Pose.jpg"
+		},
+		{
+			"id": 9,
+			"name": "T-Shirt",
+			"price": 1599,
+			"imgName": "Lana-Del-Rey-T-Shirt-Hurt.jpg"
+		},
+		{
+			"id": 10,
+			"name": "T-Shirt",
+			"price": 1699,
+			"imgName": "Lana-Del-Rey-T-Shirt-Smoking.jpg"
+		},
+		{
+			"id": 11,
+			"name": "Saint Lana Candle",
+			"price": 1249,
+			"imgName": "Lana-Del-Rey-Saint-Lana-Candle.jpg"
+		},
+		{
+			"id": 12,
+			"name": "HD Wallpaper",
+			"price": 1799,
+			"imgName": "Lana-Del-Rey-Wallpaper-Hot.png"
+		}
+	]
+}

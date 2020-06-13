@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LANA DEL REY | STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <script>
+        var stripePublicKey = "<%= stripePublicKey %>";
+    </script>
+    <script src="store.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="home">HOME</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="about">ABOUT</a></li>
+            </ul>
+        </nav>
+        <hr />
+        <h1 class="band-name band-name-large">LANA DEL REY</h1>
+    </header>
+    <section class="content-section container">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <% items.music.forEach(function(item) { %>
+                <div class="shop-item" data-item-id="<%= item.id %> ">
+                    <span class="shop-item-title"><%= item.name %> </span>
+                    <img class="shop-item-image" src="images/<%= item.imgName %> " />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %> </span>
+                        <button role="button" class="btn btn-primary shop-item-button">
+							ADD TO CART
+						</button>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <% items.merch.forEach(function(item) { %>
+                <div class="shop-item" data-item-id="<%= item.id %> ">
+                    <span class="shop-item-title"><%= item.name %> </span>
+                    <img class="shop-item-image" src="images/<%= item.imgName %> " />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$<%= item.price / 100 %> </span>
+                        <button role="button" class="btn btn-primary shop-item-button">
+							ADD TO CART
+						</button>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button role="button" class="btn btn-primary btn-purchase">
+				Purchase
+			</button>
+    </section>
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <h3 class="band-name">LANA DEL REY</h3>
+
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.facebook.com/lanadelrey/" target="_blank">
+                        <img src="./images/Facebook Logo.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" target="_blank">
+                        <img src="./images/Spotify Logo.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/LanaDelRey" target="_blank">
+                        <img src="./images/YouTube Logo.png" />
+                    </a>
+                </li>
+            </ul>
+            <a href="/users/logout" class="logout-btn-link">Logout</a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

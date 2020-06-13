@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../welcomeDashboard.css">
+    <title>DASHBOARD</title>
+</head>
+
+<body>
+    <div class="dashboard-label">
+        <h1>Dashboard</h1>
+    </div>
+    <time id="time"></time>
+    <h1>
+        <span id="greeting"></span>
+    </h1>
+    <h1>
+        <span class="dashboard-display-name">
+            <%= name %>
+        </span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 id="focus" contenteditable="true" spellcheck="false"></h2>
+    <div class="dashboard-links">
+        <a href="/" class="go-to-welcomePage-link"> Back To Welcome </a>
+        <a href="store" class="go-to-store-link">Go To Home</a>
+        <a href="/users/logout" class="logout-link">Logout</a>
+    </div>
+
+    <script src="../dashboard.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =============================================================================================== -->
+
+<!-- <h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome
+    <= name %>
+</p>
+<a href="store" class="btn btn-primary ml-2">GO TO HOME</a>
+<a href="/users/logout" class="btn btn-secondary">Logout</a> -->
